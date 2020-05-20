@@ -1,8 +1,11 @@
 import React from 'react';
-import './landing.css';
-import { Menu, Button } from 'antd';
+import {Card, Button } from 'antd';
 import 'antd/dist/antd.css';
+import './styled';
+import train from './train.jpg';
+import portrait from './portrait - Copy.jpg';
 import {DownOutlined} from '@ant-design/icons';
+
 
 class Landing extends React.Component {
     state = {
@@ -14,6 +17,7 @@ class Landing extends React.Component {
                 <div className="App">
                     <div className={"title section"}>
                         <h1 className={"titleText"}>Ismail Hozain</h1>
+                        <img src={portrait} alt={"Ismail's portrait with a train model"}/>
                         <Button shape={"circle"} type={"primary"}>
                             <DownOutlined/>
                         </Button>
@@ -69,11 +73,6 @@ class Landing extends React.Component {
                     </div>
                     <div className={"achievementsSection section"}>
                         <h1>Achievements</h1>
-                        <h2>TSA 2020</h2>
-                        <p>Disclaimer: Competition is still going, these are interim results and qualifications</p>
-                        <ul>
-                            <li>1st Place Regional(NC.TX) - Transportation Modeling</li>
-                        </ul>
                         <h2>TSA 2019</h2>
                         <ul>
                             <li>6th Place Nationals - Cybersecurity</li>
@@ -84,19 +83,22 @@ class Landing extends React.Component {
                     </div>
                     <div className={"projectSection section"}>
                         <h1>Projects</h1>
-                        <ul>
-                            <li>WebIDE</li>
-                            <li>Maglev Train Model</li>
-                            <li>Random and Organized Chaos</li>
-                            <li>More are in the works...</li>
-                        </ul>
+                        <Card title={"Maglev Train"}>
+                            <img src={train} alt={"Blue 3d printed plastic train"}/>
+                            <p>Timeline: January 2019-April 2019</p>
+                            <p>
+                                This was a project for TSA, with the whole project designed and built by me.
+                            </p>
+                        </Card>
+
                     </div>
                     <div className={"contactSection section"}>
                         <h1>Find Me in these Places</h1>
                         <ul>
-                            <li>Github</li>
-                            <li>Email</li>
-                            <li>Codepen</li>
+                            <li><a href={"https://github.com/ismailhozain"} target={"_blank"}>Github</a></li>
+                            <li><a href={"mailto:ismailhozain@gmail.com"} target={"_blank"}> Email</a></li>
+                            <li><a href={"https://codepen.io/ismailhozain"} target={"_blank"}>Codepen</a></li>
+
                         </ul>
                     </div>
                 </div>
