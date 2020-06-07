@@ -21,32 +21,28 @@ const Navigation = () => (
             mode="horizontal"
             theme="dark">
             <Menu.Item key="1">
+                <Link to={ROUTES.LANDING}>
                 <DashboardOutlined />
                 <span>Home</span>
+                </Link>
             </Menu.Item>
-            <Menu.Item key="2">
-                <DesktopOutlined />
+            <Menu.Item key="2" >
+                <Link to={ROUTES.ABOUT}>
+                <DesktopOutlined/>
                 <span>About</span>
+                </Link>
             </Menu.Item>
             <Menu.Item key="3">
+                <Link to={ROUTES.SKILLS}>
                 <UnlockOutlined />
                 <span>Skills</span>
-            </Menu.Item>
-            <Menu.Item key="4">
-                <ToolOutlined />
-                <span>Tools</span>
-            </Menu.Item>
-            <Menu.Item key="5">
-                <TrophyOutlined />
-                <span>Achievements</span>
+                </Link>
             </Menu.Item>
             <Menu.Item key="6">
+                <Link to={ROUTES.PROJECTS}>
                 <ProjectOutlined />
                 <span>Projects</span>
-            </Menu.Item>
-            <Menu.Item key="7">
-                <InboxOutlined />
-                <span>Contact</span>
+                </Link>
             </Menu.Item>
         </Menu>
     </div>
