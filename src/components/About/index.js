@@ -7,7 +7,7 @@ class About extends React.Component {
     render() {
         return (
             <div>
-                <div className={"achievementsSection section"}>
+                <div classNa0me={"achievementsSection section"}>
                     <h1>Achievements</h1>
                     <h2>TSA 2019</h2>
                     <ul>

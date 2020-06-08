@@ -7,5 +7,4 @@ const Title = styled.h1`
 const a = styled.a`
     color: white;
     text-decoration: none;
-    
 `;
