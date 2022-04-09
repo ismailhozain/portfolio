@@ -5,7 +5,7 @@
   "dependencies": {
     "@ant-design/dark-theme": "^1.0.3",
     "antd": "^3.24.3",
-    "moment": "2.24.0",
+    "moment": "2.29.2",
     "moment-timezone": "^0.5.28",
     "prop-types": "^15.7.2",
     "react": "^16.11.0",
@@ -24,7 +24,7 @@
     "eject": "react-scripts eject"
   },
   "resolutions": {
-    "moment": "2.24.0"
+    "moment": "2.29.2"
   },
   "eslintConfig": {
     "extends": "react-app"
